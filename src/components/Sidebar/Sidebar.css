@@ -1,0 +1,111 @@
+.sidebar_container {
+    display: flex;
+    flex: 1 1;
+    background: linear-gradient(180deg, #395bc8 0%, #5e3bc8 100%);
+    color: rgba(255, 255, 255, 0.478);
+    max-width: 18%;
+    min-width: 18%;
+    height: 86vh;
+    margin-top: 3rem;
+    border-radius: 25px;
+}
+.sidebar_list_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+    width: 70%;
+    align-items: flex-start;
+}
+
+    .sidebar_list_container >.navlink > li {
+        display: flex;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+    width: 100%;
+    border-bottom: 1px solid #676CD1;
+    margin-bottom: 1rem;
+    padding-bottom: 11px;
+    align-items: flex-start;
+      }
+.navlink{
+    width: 80%;
+
+}
+
+
+.lasttt{
+    border-bottom: none
+    ;
+}
+.sidebar_list_container >.navlink  li:not(:last-child) {
+    border-bottom: none !important;
+    margin-bottom: 1rem;
+    padding-bottom: 11px;
+  }
+
+  .sidebar_list_container > .selected:not(:last-child) {
+    border-bottom: 1px solid #676CD1;
+    margin-bottom: 1rem;
+    padding-bottom: 11px;
+  }
+
+  .navlink > li{
+  padding-bottom: 1rem;
+
+  }
+.sidebar_list_container li.selected {
+    color: white; 
+  opacity: 1;
+  position:relative
+  }
+
+  .list_arrow_icon {
+    position: absolute;
+    right: -97px;
+    color: grey;
+    height: 2rem;
+    top: -6px;
+    width: 2.8rem;
+    background-color: white;
+    border-radius: 1rem;
+    display: flex;
+    padding-left: 7px;
+    align-items: center;
+    justify-content: flex-start;
+}
+  
+  .list_arrow_icon::before {
+    content: "";
+    position: absolute;
+    left: 22px;
+    top: -16px;
+    transform: translateX(-50%);
+    width: 16px;
+    height: 16px;
+    box-shadow: 5px 4px 0px 0px white;
+    background-color: #4A4DC8;
+    border-radius: 50%;
+  }
+  
+  .list_arrow_icon::after {
+    content: "";
+    position: absolute;
+    left: 22.5px;
+    top: 31px;
+    transform: translateX(-50%);
+    width: 1rem;
+    height: 16px;
+    box-shadow: 4px -5px 0px 0px white;
+    background-color: #4A4DC8;
+    border-radius: 50%;
+  }
+  
+
+  
+  
+.list_property{
+    margin-bottom: 2rem;
+}
